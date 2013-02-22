@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>core.typed</artifactId>
+  <version>0.1.7-SNAPSHOT</version>
+  <name>${artifactId}</name>
+  <description>An optional type system for Clojure</description>
+
+  <licenses>
+    <license>
+      <name>Eclipse Public License 1.0</name>
+      <url>http://opensource.org/licenses/eclipse-1.0.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <parent>
+    <groupId>org.clojure</groupId>
+    <artifactId>pom.contrib</artifactId>
+    <version>0.0.26</version>
+  </parent>
+
+  <dependencies>
+    <dependency>
+      <groupId>trammel</groupId>
+      <artifactId>trammel</artifactId>
+      <version>0.7.0</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.clojure</groupId>
+          <artifactId>clojure</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>clojure</artifactId>
+      <version>1.5.0-RC16</version>
+    </dependency>
+  </dependencies>
+
+  <developers>
+    <developer>
+      <id>frenchy64</id>
+      <name>Ambrose Bonnaire-Sergeant</name>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/clojure/core.typed.git</connection>
+    <developerConnection>scm:git:git://github.com/clojure/core.typed.git</developerConnection>
+    <url>http://github.com/clojure/core.typed</url>
+  </scm>
+</project>
